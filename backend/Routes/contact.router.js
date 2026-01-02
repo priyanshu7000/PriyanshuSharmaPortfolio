@@ -1,7 +1,7 @@
 import express from "express";
-import * as contactController from "../Controllers/contact.controller.js";
+import * as contactController from "../Controller/contact.controller.js"
 
-const router = express.Rourter();
+const router = express.Router();
 
 router.post("/contactSave", contactController.contactSave);
 router.get("/contactFetch", contactController.contactFetch);
